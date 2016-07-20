@@ -14,14 +14,14 @@
     "url": "https://github.com/njakob/koa-formatter/issues"
   },
   "files": [
-    "index.js"
+    "lib/index.js"
   ],
   "keywords": [
-    "bodyParser",
+    "api",
     "json",
-    "urlencoded",
+    "body",
     "koa",
-    "body"
+    "formatter"
   ],
   "scripts": {
     "test": "make test"
