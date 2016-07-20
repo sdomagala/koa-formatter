@@ -1,0 +1,36 @@
+{
+  "name": "koa-formatter",
+  "version": "0.0.0",
+  "description": "A response body formatter for Koa",
+  "author": "Nicolas Jakob <nicow.jakob@gmail.com>",
+  "main": "build/server/index.js",
+  "license": "MIT",
+  "homepage": "https://github.com/njakob/koa-formatter",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/njakob/koa-formatter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/njakob/koa-formatter/issues"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "bodyParser",
+    "json",
+    "urlencoded",
+    "koa",
+    "body"
+  ],
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "istanbul": "0.4.4",
+    "koa": "2.0.0",
+    "mocha": "2.5.3",
+    "should": "10.0.0",
+    "supertest": "1.2.0"
+  }
+}
