@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A response body formatter for Koa",
   "author": "Nicolas Jakob <nicow.jakob@gmail.com>",
-  "main": "build/server/index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "homepage": "https://github.com/njakob/koa-formatter",
   "repository": {
