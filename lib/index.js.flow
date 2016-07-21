@@ -1,0 +1,9 @@
+// @flow
+
+type koaFormatter$Options = {
+  formatter?: (ctx: Koa$Context, err: any) => any;
+};
+
+export type Options = koaFormatter$Options;
+
+declare export default (options?: Options) => (ctx: Koa$Context, next: Function) => Promise<*>;
