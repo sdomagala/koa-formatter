@@ -1,6 +1,6 @@
 {
   "name": "koa-formatter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A response body formatter for Koa",
   "author": "Nicolas Jakob <nicow.jakob@gmail.com>",
   "main": "build/server/index.js",
