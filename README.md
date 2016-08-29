@@ -9,6 +9,7 @@ This middleware can be used to format the JSON result of API calls.
 
 * Custom format function
 * Handle aggregation of errors
+* Flowtype definition
 
 ## Installation
 
