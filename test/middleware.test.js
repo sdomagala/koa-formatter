@@ -48,5 +48,19 @@ describe('test/middleware.test.js', function() {
         .expect(JSON.stringify({ ok: 0, status: 500, errors: [ 'simple error 1', 'simple error 2' ] }))
         .expect(500, done);
     });
+
+    it('should generate body when there is an aggregate of errors', function(done) {
+      const app = new Koa();
+      app.silent = true;
+      app.use(formatter());
+      app.use(function() {
+        return Promise.reject([new Error('simple error 1'), new Error('simple error 2')]);
+      });
+      request(app.listen())
+        .get('/')
+        .set('content-type', 'application/json')
+        .expect(JSON.stringify({ ok: 0, status: 500, errors: [ 'simple error 1', 'simple error 2' ] }))
+        .expect(500, done);
+    });
   });
 });
