@@ -49,7 +49,7 @@ describe('test/middleware.test.js', function() {
         .expect(500, done);
     });
 
-    it('should generate body when there is an aggregate of errors', function(done) {
+    it('should generate body when there is an aggregate of errors using Promises', function(done) {
       const app = new Koa();
       app.silent = true;
       app.use(formatter());
